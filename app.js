@@ -23,7 +23,7 @@ function books(req, res) {
   res.setHeader("Content-Type", "text/plain");
   res.setHeader("Content-Length", data.length);
   res.write(data);
-  res.end;
+  res.end();
 }
 
 /**
@@ -39,5 +39,5 @@ function bookAuthors(req, res) {
   res.setHeader("Content-Type", "text/plain");
   res.setHeader("Content-Length", data.length);
   res.write(data);
-  res.end;
+  res.end();
 }
